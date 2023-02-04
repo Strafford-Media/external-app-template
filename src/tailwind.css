@@ -1,0 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  .s-flex-center {
+    @apply s-flex s-justify-center s-items-center !important;
+  }
+}
