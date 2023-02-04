@@ -2,7 +2,7 @@ import { createContext, useContext } from 'react'
 import { DudaContextValue } from './@types/duda'
 
 const DudaContext = createContext<DudaContextValue>({
-  data: {
+  siteDetails: {
     device: 'desktop',
     page: 'home',
     inEditor: true,

@@ -1,5 +1,5 @@
 export interface DudaContextValue {
-  data: {
+  siteDetails: {
     device: 'desktop' | 'tablet' | 'mobile'
     page: string
     inEditor: boolean

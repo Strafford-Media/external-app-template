@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'development') {
   root.render(
     <DudaProvider
       value={{
-        data: {
+        siteDetails: {
           device: 'desktop',
           page: 'home',
           inEditor: true,
