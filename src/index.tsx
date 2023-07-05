@@ -3,6 +3,15 @@ import { createRoot } from 'react-dom/client'
 import { DudaContextValue } from './@types/duda'
 import { App } from './components/App'
 import { DudaProvider } from './DudaContext'
+// @ts-ignore
+import cssText from 'bundle-text:./tailwind.css'
+
+if (process.env.NODE_ENV !== 'development') {
+  // inject <style> tag
+  let style = document.createElement('style')
+  style.textContent = cssText
+  document.head.appendChild(style)
+}
 
 let root
 export function init({
